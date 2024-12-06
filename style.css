@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.nav-link {
+    color: #000;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Basket Items */
+.basket-item img {
+    border-radius: 8px;
+}
+
+/* Order Summary */
+h4 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-weight: bold;
+}
+
+/* Rounded container for basket items */
+.basket-item {
+    border: 1px solid #ddd; /* Light border for structure */
+    border-radius: 12px;    /* Rounds corners of the item container */
+    background-color: #f9f9f9; /* Match the light background */
+}
+
+/* Product image styling */
+.product-img {
+    width: 60px;            /* Size of the image */
+    height: 60px;           /* Consistent height */
+    object-fit: cover;      /* Keeps aspect ratio */
+    border-radius: 8px;     /* Rounds corners of the image */
+}
+
+/* Adjust text spacing */
+.basket-item h5 {
+    font-family: 'Playfair Display', serif; /* Ensure consistent heading font */
+    font-size: 1rem;        /* Match design font size */
+    margin: 0;              /* Remove extra margins */
+}
+
+.basket-item small {
+    font-family: 'Roboto', sans-serif; /* Body font */
+    font-size: 0.875rem;
+}
+
+/* Price alignment */
+.basket-item .ms-auto {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .basket-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .basket-item img {
+        width: 100%;
+    }
+}
